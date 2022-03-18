@@ -1,0 +1,49 @@
+<meta charset="UTF-8">
+
+<h1>Tabuadas!!!</h1>
+
+<script>
+    function skipLine(){
+
+        document.write("<br>");
+
+    }
+
+    function print(text){
+
+        document.write(text)
+        skipLine();
+    }
+
+    function tabuada(n){
+      
+      /*var multiplicador = 1;
+      /*while(multiplicador <= 10) {
+        print(n + " x " + multiplicador +" = " + n * multiplicador);
+        multiplicador = multiplicador + 1;
+      }
+
+      for( var i = 0; i < 10; i++ ) {
+        alert( "O resultado é " + (2 * i) );
+      }
+
+      var i = 0;
+      while(i < 10){
+        alert( "O resultado é " + (2 * i));
+        i++;
+      }*/
+      
+      for(var multiplicador = 1; multiplicador <= 10; multiplicador++){
+          print(n + " x " + multiplicador +" = " + n * multiplicador);
+      }
+
+      
+    }
+var numero = parseInt(prompt("Qual tabuada você deseja saber??"));
+tabuada(numero);
+print("FIM");
+
+
+
+
+</script>

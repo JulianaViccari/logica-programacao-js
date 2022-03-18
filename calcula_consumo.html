@@ -1,0 +1,24 @@
+<meta charset="UTF-8">
+<h3>Álcool ou Gasolina?</h3>
+
+<script>
+ 
+  function print(text){
+
+      document.write(text);
+      document.write("<br>");
+  }
+
+  var tanque = 40;
+  var caminhoComGasolina = 480;
+  
+  var mediaGasolina = caminhoComGasolina / tanque;
+
+  print("O consumo de Gasolina foi de: " + Math.round(mediaGasolina) + " litros por km/L");
+  
+  var caminhoComAlcool = 300;
+  var mediaAlcool = caminhoComAlcool / tanque;
+
+  print("O consumo de Álcool foi de: " + Math.round(mediaAlcool) + " litros por km/L");
+
+</script>

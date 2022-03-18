@@ -1,0 +1,36 @@
+<meta charset="UTF-8">
+
+<h2>Vamos contar</h2>
+
+<input/>
+<button>Qual a 1 idade?</button>
+
+<script>
+    function skipLine(){
+
+        document.write("<br>");
+
+    }
+
+    function print(text){
+
+        document.write(text );
+        skipLine();
+
+    }
+   
+    var totalFamiliares = parseInt(prompt("Quantdade de familiares"));
+    var contador = 1;
+    totalIdade = 0;
+    
+    while(contador <= totalFamiliares){
+        var idade = parseInt(prompt("Informe a " + contador + " idade"));
+      
+        totalIdade = totalIdade + idade;
+        contador++;
+    }
+    
+    var media_idades = totalIdade/totalFamiliares
+    print("A média das Idades é: " +  Math.round(media_idades));
+
+</script>

@@ -1,0 +1,36 @@
+<meta charset="UTF-8">
+
+<h2>Anos de Copa</h2>
+
+<script>
+    function skipLine(){
+
+        document.write("<br>");
+
+    }
+
+    function print(text){
+
+        document.write(text );
+        skipLine();
+
+    }
+
+    const dataAtual = new Date();
+    const anoAtual = dataAtual.getFullYear();
+    var anoCopa = 1930;
+
+    alert("Teve copa em " + anoCopa);
+
+    
+    while(anoCopa <= anoAtual ){
+      print("Teve copoa em " + anoCopa);
+      anoCopa = anoCopa + 4;
+    }
+
+  
+
+    print("Fim!!")
+
+    
+</script>

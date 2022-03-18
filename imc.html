@@ -1,0 +1,48 @@
+<meta charset="UTF-8">
+
+<h1>Resultado IMC</h1>
+
+
+<script>
+    function skipLine(){
+
+      document.write("<br><br>");
+
+    }
+
+    function print(text){
+    
+      document.write("<big>" + text + "</big>");
+      skipLine();
+      
+    }
+
+    function calculaImc(peso, altura, nome){
+    
+      return peso / (altura * altura);
+      
+      
+    }
+    
+    var nome = prompt("Informe o seu nome");
+    var peso = prompt(nome + " informe seu peso");
+    var altura = prompt(nome + " informe seu peso");;
+    var imc1 = calculaImc(peso, altura, nome);
+    print( nome + " seu IMC é: " + Math.round(imc1));
+    
+    if(imc1 < 18.5){
+        print(nome + ": Cuidado Seu IMC esta muito baixo do recomendado!!!");
+    }
+
+    if(imc1 > 35){
+        print( nome + ": Cuidado Seu IMC está acima do recomendado!!!");
+    }
+
+    if((imc1 >= 18.5 && imc1 <= 35)){
+        print( nome + "!!! Parabéns você esta ótimo seu IMC esta Excelente.");
+    }
+
+
+
+
+</script>

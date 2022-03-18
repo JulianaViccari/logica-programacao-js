@@ -1,0 +1,42 @@
+<meta charset="UTF-8">
+
+<h2>Pontos do seu time</h2>
+
+<script>
+    function skipLine(){
+
+        document.write("<br>");
+
+    }
+
+    function print(text){
+
+        document.write("<big>" + text + "<big>");
+        skipLine();
+
+    }
+    
+    var vitorias = prompt("Entre com o número de vitórias.");
+    var empates = parseInt(prompt("Entre com o número de empates."));
+
+
+    var pontos = parseInt(vitorias) * 3 + (empates);
+    var anoPassado = 10;
+
+    print("Pontos ano passado: " + pontos);
+    print("Os pontos atual do seu time foi " + pontos);
+
+    
+
+    if(pontos > anoPassado){
+        print("Seu Time está melhor que o ano passado");
+    }
+    
+    if(pontos < anoPassado){
+        print("Seu Time está pior que o ano passado  " );
+    }
+
+    if(pontos == anoPassado){
+    print("Seu Time está igual ao ano passado ");
+    }
+</script>

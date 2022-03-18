@@ -1,0 +1,49 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function skipLine(){
+
+        document.write("<br>");
+    }
+
+    function print(text){
+
+        document.write("<big>" + text + "</big>");
+        skipLine();
+    }
+
+    function sorteia(n){
+        return  Math.round(Math.random() * n);
+    }
+
+    var numeroPensado = sorteia(parseInt(prompt("Até qual número posso sortear ???")));
+    var contador = 1;
+    while(contador <= 3){
+        var chute = parseInt(prompt("Agora digite seu chute!!"));
+        console.log(numeroPensado);
+
+        if(chute == numeroPensado){
+
+            print("Uau! Você ACERTOU, o número sorteado foi o " + numeroPensado);
+            skipLine();
+            break;
+            
+        }else{
+            if(chute > numeroPensado){
+                
+                print("Você ERROU!!" + "<br>" + "Seu chute foi " + chute + " sendo maior que o número pensado ");
+                skipLine();
+            }else{
+                
+                print("Você ERROU!!" + "<br>" + "Seu chute foi " + chute + " sendo menor que o número pensado ");
+                skipLine();
+            }
+        }
+        contador++;
+    }
+
+    print("Fim");
+
+
+</script>
